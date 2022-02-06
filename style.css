@@ -1,177 +1,230 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #ebf0f0;
-    font-family: 'Bitter', serif;
+  background-color: #ebf0f0;
+  font-family: "Bitter", serif;
 }
 
 .container {
-    margin: 1.25rem 5rem;
+  margin: 1.25rem 5rem;
 }
 
 h1 {
-    font-size: 2.5rem;
-    text-align: center;
-    text-decoration: underline;
-    color: steelblue;
-    padding-bottom: 1.5rem;
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: underline;
+  color: steelblue;
+  padding-bottom: 1.5rem;
 }
 
-.gpa-4, .bottom {
-    background-color: #cedada;
-    padding: 1.25rem 2.5rem;
+.gpa-4,
+.bottom {
+  background-color: #cedada;
+  padding: 1.25rem 2.5rem;
 }
 
 .midSec {
-    padding: 1.25rem 2.5rem;
+  padding: 1.25rem 2.5rem;
 }
 
 h2 {
-    font-size: 2rem;
-    text-align: center;
-    color: steelblue;
-    padding-bottom: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: steelblue;
+  padding-bottom: 1.5rem;
 }
 
 p {
-    font-size: 1.25rem;
-    padding: 1rem 0;
+  font-size: 1.25rem;
+  padding: 1rem 0;
 }
 
 .gpa-4 #top {
-    text-align: center;
+  text-align: center;
 }
 
 table {
-    border-collapse: collapse;
-    width: 100%;
-    padding: 0 1.5rem;
+  border-collapse: collapse;
+  padding: 0 1.5rem;
+  overflow-x: scroll;
 }
 
-table th, table td {
-    border: 2px solid rgb(97, 84, 84);
-    padding: 8px;
+table th,
+table td {
+  border: 2px solid rgb(97, 84, 84);
+  padding: 8px;
 }
 
 table td {
-    text-align: center;
+  text-align: center;
 }
 
 .gpa-table tr:nth-child(even) {
-    background-color: #252c2c;
+  background-color: #252c2c;
 }
 
 table th {
-    background-color: rgb(74, 180, 180);
+  background-color: rgb(74, 180, 180);
 }
 
 .inputsAndButton {
-    padding: 1.25rem 0;
+  padding: 1.25rem 0;
 }
 
 .inputs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .inputs label {
-    margin-right: 2rem;
-    font-size: 2rem;
+  margin-right: 2rem;
+  font-size: 2rem;
 }
 
 .inputs input {
-    padding: 10px;
-    width: 22rem;
-    font-family: inherit;
-    font-weight: 600;
-    border-radius: 5px;
-    border: none;
+  padding: 10px;
+  width: 22rem;
+  font-family: inherit;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
 }
 
-.inputsAndButton button, .bottom button {
-    margin: 1.25rem 0;
-    padding: 12px;
-    font-family: inherit;
-    width: 20%;
-    margin-left: 40%;
-    font-weight: 600;
-    border-radius: 10px;
-    border: 2px solid rgb(12, 12, 12);
-    background-color: sienna;
-    transition: 0.3s ease;
-    cursor: pointer;
+.inputsAndButton button,
+.bottom button {
+  margin: 1.25rem 0;
+  padding: 12px;
+  font-family: inherit;
+  width: 20%;
+  margin-left: 40%;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 2px solid rgb(12, 12, 12);
+  background-color: sienna;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
 
-.inputsAndButton button:hover, .bottom button:hover {
-    background-color: rgb(74, 180, 180);
+.inputsAndButton button:hover,
+.bottom button:hover {
+  background-color: rgb(74, 180, 180);
 }
 
 #gpaResult {
-    text-align: center;
+  text-align: center;
 }
 
 #gpaResult span {
-    padding: 7px 20px;
-    border: 3px solid white;
-    background-color: lightsalmon;
-    color: black;
-    font-weight: 600;
-    font-size: 20px;
-    margin-left: 10px;
+  padding: 7px 20px;
+  border: 3px solid white;
+  background-color: lightsalmon;
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 10px;
 }
 
 h3 {
-    text-align: center;
-    font-size: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .midSec p {
-    text-align: center;
+  text-align: center;
 }
 
 .inputsOfGpa {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
 }
 
 .inputsOfGpa label {
-    font-weight: 600;
-    font-size: 1.25rem;
-    margin-right: 1rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-right: 1rem;
 }
 
 .inputsOfGpa input {
-    padding: 10px;
-    width: 22rem;
-    font-family: inherit;
-    font-weight: 600;
-    border-radius: 5px;
-    border: none;
+  padding: 10px;
+  width: 22rem;
+  font-family: inherit;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
 }
 
 #subject_credit {
-    margin-right: 7rem;
+  margin-right: 7rem;
+}
+
+.inputsOfGpa div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #bottom-last {
-    text-align: center;
+  text-align: center;
 }
 
 footer p {
-    text-align: center;
-    font-size: smaller;
+  text-align: center;
+  font-size: smaller;
 }
 
 footer span {
-    color: red;
+  color: red;
+}
+
+/* for responsive */
+::-webkit-scrollbar {
+  width: 10px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+@media (max-width: 1170px) {
+  .inputsOfGpa {
+    display: block;
+  }
+
+  .inputsOfGpa #subject_credit {
+    margin-right: 0;
+  }
+
+  .inputsOfGpa div {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    margin: 0;
+  }
+
+  .inputsAndButton button,
+  .bottom button {
+    width: 50%;
+    margin-left: 25%;
+  }
 }
