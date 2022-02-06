@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>HPU CGPA Calculator</h1>
+        <section class="gpa-4">
+            <h2>What's your GPA out of 4?</h2>
+            <p id="top">We will be using the following scale in the table below to convert your marks into GPA.</p>
+            <table class="gpa-table">
+                <thead>
+                    <th>Score</th>
+                    <th>100 ~ 90</th>
+                    <th>89 ~ 85</th>
+                    <th>84 ~ 80</th>
+                    <th>79 ~ 76</th>
+                    <th>75 ~ 73</th>
+                    <th>72 ~ 70</th>
+                    <th>69 ~ 66</th>
+                    <th>65 ~ 63</th>
+                    <th>62 ~ 61</th>
+                    <th>60</th>
+                    <th>< 60</th>
+                </thead>
+                <tbody>
+                    <td><strong>Grade Point</strong></td>
+                    <td>4</td>
+                    <td>3.7</td>
+                    <td>3.3</td>
+                    <td>3</td>
+                    <td>2.7</td>
+                    <td>2.3</td>
+                    <td>2</td>
+                    <td>1.7</td>
+                    <td>1.3</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tbody>
+            </table>
+            <div class="inputsAndButton">
+                <div class="inputs">
+                    <label for="textInput">Enter Your Marks:</label>
+                    <input type="text" id="textInput" placeholder="Your Marks">
+                </div>
+                <button type="button" id="gpaConverter">Convert to this Scale</button>
+            </div>
+            <p id="gpaResult">GPA <strong>out of 4 is: </strong><span id="textOutput">0</span></p>
+        </section>
+        <hr>
+        <section class="midSec">
+            <h3>Calculating Method</h3>
+            <p><Strong>NOTE:*</Strong> We are using the following formula to calculate:</p>
+            <p><strong>My OverAll CGPA:</strong> Average of <strong>(GPA * Credit) / Average of (Credit)</strong></p>
+        </section>
+        <hr>
+        <section class="bottom">
+            <p><strong>NOTE:*</strong> If on mobile and you can't see the table completely, just swipe the screen to the right.</p>
+            <table class="credit">
+                <thead>
+                    <th>GPA</th>
+                    <th>Credit</th>
+                    <th>GPA * Credit</th>
+                    <th>Sum (Credit)</th>
+                    <th>Sum (GPA * Credit)</th>
+                    <th>My OverAll CGPA</th>
+                </thead>
+                <tbody>
+                    <td id="gpa-show">0</td>
+                    <td id="credit-show">0</td>
+                    <td id="gpaXcredit-show">0</td>
+                    <td id="sumCredit-show">0</td>
+                    <td id="sumGpaCredit-show">0</td>
+                    <td id="overallGpa-show">0</td>
+                </tbody>
+            </table>
+            <div class="inputsOfGpa">
+                <label for="subject_credit">Subject Credit:</label>
+                <input type="text" id="subject_credit" placeholder="Enter Subject Credit">
+                <label for="subject_gpa">Subject GPA:</label>
+                <input type="text" id="subject_gpa" placeholder="Enter Subject GPA">
+            </div>
+            <button type="button" id="getCgpa">Calculate</button>
+            <p id="bottom-last"><strong>NOTE:*</strong> Keep calculating from first to last. You will get the OverAll CGPA.</p>
+            <footer>
+                <p>2022@<span>AL RASHID TOWMIR</span>&copy;</p>
+                <p>HPU <span>Batch-2018</span></p>
+            </footer>
+        </section>
+    </main>
+
+    <script src="dynamic.js"></script>
+</body>
+</html>
